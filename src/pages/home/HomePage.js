@@ -6,9 +6,9 @@ import Carousel from "react-material-ui-carousel";
 
 function HomePage() {
   const images = [
-    'https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg',
-    'https://www.gstatic.com/meet/user_edu_scheduling_light_b352efa017e4f8f1ffda43e847820322.svg',
-    'https://www.gstatic.com/meet/user_edu_safety_light_e04a2bbb449524ef7e49ea36d5f25b65.svg',
+    "https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg",
+    "https://www.gstatic.com/meet/user_edu_scheduling_light_b352efa017e4f8f1ffda43e847820322.svg",
+    "https://www.gstatic.com/meet/user_edu_safety_light_e04a2bbb449524ef7e49ea36d5f25b65.svg",
   ];
 
   return (
@@ -32,14 +32,14 @@ function HomePage() {
           </Typography>
         </Grid>
 
-        <Grid item md={12} pl={5} mb={10}  >
+        <Grid item md={12} pl={5} mb={10}>
           <Typography
             variant="subtitle1"
             style={{
               color: "#63676C",
               fontFamily: "poppins",
               fontWeight: "500",
-              height:"50px"
+              height: "50px",
             }}
           >
             We re-engineered the service we built for secure business <br />
@@ -47,8 +47,8 @@ function HomePage() {
           </Typography>
         </Grid>
 
-        <Grid container spacing={2} mb={20}  >
-          <Grid pl={7} >
+        <Grid container spacing={2} mb={20}>
+          <Grid pl={7}>
             <Button
               item
               variant="contained"
@@ -58,7 +58,7 @@ function HomePage() {
             </Button>
           </Grid>
 
-          <Grid pl={5} >
+          <Grid pl={5}>
             <TextField
               item
               id="outlined-basic"
@@ -68,11 +68,7 @@ function HomePage() {
             />
           </Grid>
           <Grid pl={2}>
-            <Button
-              item
-              variant="outlined"
-              
-            >
+            <Button item variant="outlined">
               Join
             </Button>
           </Grid>
@@ -84,40 +80,39 @@ function HomePage() {
         item
         md={6}
         xs={12}
-        lg={6} 
+        lg={6}
         pr={5}
         justifyContent={"center"}
         alignItems={"center"}
       >
-      <Grid item md={12} lg={12}>
-        <Carousel sx={{
-          width:"100%",
-          height:"80vh",
-          
-        }}>
-        
-         {
-          images.map((image,index)=>{
-            return <Paper key={index}>
-            <img src={image} alt="" style={
-              {
-                maxWidth: '100%',
-                maxHeight: '100%',
-                width: 'auto',
-                height: 'auto',
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)'
-              }
-            }
-             />
-            </Paper>
-
-          })
-         }
-        
-        </Carousel>
+        <Grid item md={12} lg={12}>
+          <Carousel
+            sx={{
+              width: "100%",
+              height: "80vh",
+            }}
+          >
+            {images.map((image, index) => {
+              return (
+                <Paper key={index}>
+                  <img
+                    src={image}
+                    alt=""
+                    style={{
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                      width: "auto",
+                      height: "auto",
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                    }}
+                  />
+                </Paper>
+              );
+            })}
+          </Carousel>
         </Grid>
       </Grid>
     </Grid>
