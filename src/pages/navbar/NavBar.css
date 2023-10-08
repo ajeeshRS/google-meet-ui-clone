@@ -2,7 +2,8 @@
   margin: 0;
   outline: 0;
   padding: 0;
-  font-family: 'roboto';
+  font-family: 'poppins';
+  font-weight: 500;
 }
 
 .container {
@@ -22,7 +23,7 @@
   flex-direction: row;
   align-items: center;
   padding-left: 20px;
-  color: rgb(99, 99, 99);
+  color: #5F6368;
 }
 
 .logo img{
