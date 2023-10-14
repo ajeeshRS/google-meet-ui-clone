@@ -1,0 +1,47 @@
+.meet-container {
+  width: 100%;
+  height: 100svh;
+  background-color: #2f2e2e;
+}
+.main-grid {
+  height: 80svh;
+}
+.my-video {
+  background-color: #5c5b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-video video {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+}
+.video-container {
+  background-color: #919191;
+  overflow-y: auto;
+  width: 100%;
+  height: 81svh;
+  position: fixed;
+  right: 0;
+}
+
+.video-container video {
+  background-color: #fdf4f4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.controllers {
+  width: 100%;
+  position: fixed;
+  bottom: 40px;
+}
+
+.grid-item {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
